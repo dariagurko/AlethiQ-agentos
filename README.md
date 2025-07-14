@@ -1,3 +1,51 @@
+# AlethiQ-AgentOS
+
+**AlethiQ** is a multi-agent system built on GenAI AgentOS for **real-time fact-checking** and **ethical prompt auditing**.  
+
+---
+
+## 🚀 Features
+
+- **Instant Fact-Check**  
+  LLM-driven “Claim Checker” labels any statement as True/False/Misleading/Unverifiable.
+
+- **Ethical Prompt Audit**  
+  “Ethics Checker” flags bias, harmful stereotypes, and sensitive content in user prompts.
+
+- **One-Step Workflow**  
+  Single user input → AlethiQ Master Agent → parallel sub-agents → unified response.
+
+- **Optional Web Search**  
+  Integrate live evidence via the `openai-websearch-mcp` microservice.
+
+---
+
+## 📋 Prerequisites
+
+- **Python 3.12+**  
+- **Docker & Docker Compose** (for full stack)  
+- **GenAI AgentOS** (local dev)  
+- **OpenAI API Key** (for LLM in claim_checker)  
+
+---
+
+## 🛠️ Quick Start
+
+```bash
+ 1. Clone
+git clone https://github.com/dariagurko/AlethiQ-agentos.git
+cd AlethiQ-agentos
+
+ 2. Python env (optional, for CLI & local agents)
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+3. Docker stack (front-end, router, DB, CLI & MCP server)
+docker-compose up --build
+```
+
+
 # 🐍 GenAI Agents Infrastructure
 
 This repository provides the complete infrastructure for running GenAI agents, including:
