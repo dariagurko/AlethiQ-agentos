@@ -1,3 +1,0 @@
-[submodule "mcp/openai-websearch-mcp"]
-	path = mcp/openai-websearch-mcp
-	url = https://github.com/ConechoAI/openai-websearch-mcp.git
